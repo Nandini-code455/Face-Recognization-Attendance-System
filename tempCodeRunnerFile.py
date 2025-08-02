@@ -1,0 +1,11 @@
+img=Image.open(r"C:\Users\nandi\OneDrive\Desktop\Face Recognization Attendance System\College Images\registernow.png")
+        img=img.resize((150,50),Image.Resampling.LANCZOS)
+        self.photoimage = ImageTk.PhotoImage(img)
+        b1 = Button(frame,image=self.photoimage,borderwidth=0,cursor="hand2")
+        b1.place(x=50,y=450,width=300)
+
+        img1=Image.open(r"C:\Users\nandi\OneDrive\Desktop\Face Recognization Attendance System\College Images\loginnow.png")
+        img1=img1.resize((200,50),Image.Resampling.LANCZOS)
+        self.photoimage1 = ImageTk.PhotoImage(img1)
+        b1 = Button(frame,image=self.photoimage,borderwidth=0,cursor="hand2",font=("times new roman",15,"bold"))
+        b1.place(x=330,y=450,width=300)
